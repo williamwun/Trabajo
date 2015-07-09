@@ -18,41 +18,41 @@ import upc.com.pe.trabajo.activities.ComponentsActivity;
 /**
  * Created by William on 09/07/2015.
  */
-public class ComputersAdapter extends RecyclerView.Adapter<LaboratoriesAdapter.ViewHolder> {
-    ArrayList<Laboratory> laboratories;
+public class ComputersAdapter extends RecyclerView.Adapter<ComputersAdapter.ViewHolder> {
+    ArrayList<Computer> computers;
 
-    public LaboratoriesAdapter(ArrayList<Laboratory> laboratories) {
-        this.laboratories = laboratories;
+    public ComputersAdapter(ArrayList<Computer> computers) {
+        this.computers = computers;
     }
 
     @Override
-    public LaboratoriesAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.laboratory_row_layout, parent, false);
+    public ComputersAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.computer_row_layout, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(LaboratoriesAdapter.ViewHolder holder, final int position) {
-        holder.laboratoryNameTextView.setText(laboratories.get(position).getLaboratoryName());
+    public void onBindViewHolder(ComputersAdapter.ViewHolder holder, final int position) {
+        holder.computerNameTextView.setText(computers.get(position).getcomputerName());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.printf("Selected position: %d%n", position);
-                Intent computerActivityIntent = new Intent(view.getContext(), ComputersActivity.class);
+                Intent componentActivityIntent = new Intent(view.getContext(), ComponentsActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putInt("laboratoryId", laboratories.get(position).getLaboratoryId());
-                bundle.putString("laboratoryName", laboratories.get(position).getLaboratoryName());
-                computerActivityIntent.putExtras(bundle);
-                view.getContext().startActivity(computerActivityIntent);
+                bundle.putInt("computerId", computers.get(position).getComputerId());
+                bundle.putString("computerName", computers.get(position).getcomputerName());
+                componentActivityIntent.putExtras(bundle);
+                view.getContext().startActivity(componentActivityIntent);
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return laboratories.size();
+        return computers.size();
     }
 
     @Override
@@ -61,10 +61,10 @@ public class ComputersAdapter extends RecyclerView.Adapter<LaboratoriesAdapter.V
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView laboratoryNameTextView;
+        TextView computerNameTextView;
         public ViewHolder(View itemView) {
             super(itemView);
-            laboratoryNameTextView = (TextView) itemView.findViewById(R.id.laboratoryNameTextView);
+            computerNameTextView = (TextView) itemView.findViewById(R.id.computerNameTextView);
         }
     }
 
