@@ -1,4 +1,4 @@
-package upc.com.pe.trabajo;
+package upc.com.pe.trabajo.activities;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import upc.com.pe.trabajo.R;
 import upc.com.pe.trabajo.models.Laboratory;
 
 

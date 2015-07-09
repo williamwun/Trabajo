@@ -1,36 +1,41 @@
-package upc.com.pe.trabajo;
+package upc.com.pe.trabajo.activities;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import upc.com.pe.trabajo.R;
 
-public class MotherboardActivity extends ActionBarActivity {
 
-    Button editButton;
+public class OptionsActivity extends ActionBarActivity {
+
+    Button laboratoriesButton;
+    SearchView computerSearchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_motherboard);
-        editButton = (Button)findViewById(R.id.editButton);
-        editButton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_options);
+        laboratoriesButton = (Button)findViewById(R.id.laboratoriesButton);
+        laboratoriesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToEditMotherboard(v);
+                goToLaboratories(v);
             }
         });
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_motherboard, menu);
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
         return true;
     }
 
@@ -49,8 +54,9 @@ public class MotherboardActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void goToEditMotherboard(View view){
-        Intent editMotherboard = new Intent(this, EditMotherboardActivity.class);
-        startActivity(editMotherboard);
+    public void goToLaboratories(View view){
+        Intent laboratoriesIntent = new Intent(this, LaboriatoriesActivity.class);
+        startActivity(laboratoriesIntent);
     }
+
 }

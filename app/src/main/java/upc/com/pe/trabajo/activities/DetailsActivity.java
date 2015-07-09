@@ -1,4 +1,4 @@
-package upc.com.pe.trabajo;
+package upc.com.pe.trabajo.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import upc.com.pe.trabajo.R;
 import upc.com.pe.trabajo.models.ComponentsAdapter;
 import upc.com.pe.trabajo.models.Computer;
 

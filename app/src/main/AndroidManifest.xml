@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="Inventario" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,35 +17,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OptionsActivity"
+            android:name=".activities.OptionsActivity"
             android:label="@string/title_activity_opciones" >
         </activity>
         <activity
-            android:name=".LaboriatoriesActivity"
+            android:name=".activities.LaboriatoriesActivity"
             android:label="@string/title_activity_laboriatories" >
         </activity>
         <activity
-            android:name=".ComputersActivity"
+            android:name=".activities.ComputersActivity"
             android:label="@string/title_activity_computers" >
         </activity>
         <activity
-            android:name=".DetailsActivity"
+            android:name=".activities.DetailsActivity"
             android:label="@string/title_activity_details" >
         </activity>
         <activity
-            android:name=".MotherboardActivity"
+            android:name=".activities.MotherboardActivity"
             android:label="@string/title_activity_motherboard" >
         </activity>
         <activity
-            android:name=".EditMotherboardActivity"
+            android:name=".activities.EditMotherboardActivity"
             android:label="@string/title_activity_edit_motherboard" >
         </activity>
         <activity
-            android:name=".ExternalActivity"
+            android:name=".activities.ExternalActivity"
             android:label="@string/title_activity_external" >
         </activity>
         <activity
-            android:name=".EditExternalActivity"
+            android:name=".activities.EditExternalActivity"
             android:label="@string/title_activity_edit_external" >
         </activity>
     </application>

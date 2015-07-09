@@ -1,4 +1,4 @@
-package upc.com.pe.trabajo;
+package upc.com.pe.trabajo.activities;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONObject;
 
+import upc.com.pe.trabajo.R;
 import upc.com.pe.trabajo.models.Laboratory;
 
 

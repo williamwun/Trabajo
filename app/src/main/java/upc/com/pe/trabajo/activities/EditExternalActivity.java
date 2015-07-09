@@ -1,9 +1,11 @@
-package upc.com.pe.trabajo;
+package upc.com.pe.trabajo.activities;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import upc.com.pe.trabajo.R;
 
 
 public class EditExternalActivity extends ActionBarActivity {
