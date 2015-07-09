@@ -36,9 +36,9 @@ public class Details extends Activity{// implements AdapterView.OnItemClickListe
         }
 
         ArrayList computerArrayList = getListData(computerReceived);
-        componentListView = (ListView)findViewById(R.id.componentListView);//----N----
-        myAdapter = new ComponentsAdapter(this,computerArrayList);//----N----
-        componentListView.setAdapter(myAdapter);//----N----
+        componentListView = (ListView)findViewById(R.id.componentListView);//-----N-----
+        myAdapter = new ComponentsAdapter(this,computerArrayList);//-----N-----
+        componentListView.setAdapter(myAdapter);//-----N-----
 
     }
 
