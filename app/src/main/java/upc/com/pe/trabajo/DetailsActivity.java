@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Details extends Activity{// implements AdapterView.OnItemClickListener{
+public class DetailsActivity extends Activity{// implements AdapterView.OnItemClickListener{
 
     Computer computerReceived;
     //TextView computerTextView;

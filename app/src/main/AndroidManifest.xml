@@ -25,11 +25,11 @@
             android:label="@string/title_activity_laboriatories" >
         </activity>
         <activity
-            android:name=".Computers"
+            android:name=".ComputersActivity"
             android:label="@string/title_activity_computers" >
         </activity>
         <activity
-            android:name=".Details"
+            android:name=".DetailsActivity"
             android:label="@string/title_activity_details" >
         </activity>
         <activity

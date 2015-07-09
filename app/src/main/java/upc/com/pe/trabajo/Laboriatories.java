@@ -2,7 +2,6 @@ package upc.com.pe.trabajo;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.util.Log;
 
 //json
 import com.loopj.android.http.AsyncHttpClient;
@@ -73,7 +71,7 @@ public class Laboriatories extends ListActivity {
     }
 
     public void goToComputers(View view, int position){
-        Intent computersIntent = new Intent(this, Computers.class);
+        Intent computersIntent = new Intent(this, ComputersActivity.class);
         computersIntent.putExtra("laboratoryObject",vLaboratories[position]);
         startActivity(computersIntent);
     }

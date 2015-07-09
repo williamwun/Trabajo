@@ -1,23 +1,16 @@
 package upc.com.pe.trabajo;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
-public class Computers extends ListActivity {
+public class ComputersActivity extends ListActivity {
 
     //TextView computerNameTextView;
     //Computer computers[];
@@ -74,7 +67,7 @@ public class Computers extends ListActivity {
     }
 
     public void goToDetails(View view, int position){
-        Intent detailsIntent = new Intent(this,Details.class);
+        Intent detailsIntent = new Intent(this,DetailsActivity.class);
         detailsIntent.putExtra("computerObject",laboratory.getComputerInPosition(position));
         startActivity(detailsIntent);
     }
