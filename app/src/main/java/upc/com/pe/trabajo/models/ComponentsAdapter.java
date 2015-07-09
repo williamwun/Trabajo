@@ -35,7 +35,7 @@ public class ComponentsAdapter extends ArrayAdapter<Computer> {
         //Comprobando si el View no existe
         if (null == convertView) {
             //Si no existe, entonces inflarlo con two_line_list_item.xml
-            listItemView = inflater.inflate(R.layout.component_list_row_layout, parent, false);
+            listItemView = inflater.inflate(R.layout.component_row_layout, parent, false);
         }
 
         //Obteniendo instancias de los text views
