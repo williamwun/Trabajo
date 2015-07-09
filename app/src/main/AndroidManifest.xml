@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="upc.com.pe.trabajo" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -48,6 +50,10 @@
             android:name=".activities.EditExternalActivity"
             android:label="@string/title_activity_edit_external" >
         </activity>
+        <activity
+            android:name=".ComponentsActivity"
+            android:label="@string/title_activity_components" >
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
+
 </manifest>
