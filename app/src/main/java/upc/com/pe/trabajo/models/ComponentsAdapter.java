@@ -1,4 +1,4 @@
-package upc.com.pe.trabajo;
+package upc.com.pe.trabajo.models;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,10 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 ;
 import android.widget.TextView;
-import android.widget.ImageView;
 
 
 import java.util.List;
+
+import upc.com.pe.trabajo.R;
 
 /**
  * Created by william on 10/06/15.

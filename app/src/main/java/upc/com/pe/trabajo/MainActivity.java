@@ -13,7 +13,7 @@ import android.widget.EditText;
 public class MainActivity extends ActionBarActivity {
 
     Button loginButton;
-    Options options;
+    OptionsActivity options;
     EditText userEditText, passwordEditText;
 
     @Override
@@ -58,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void goToOptions(View view){
-        Intent optionsIntent = new Intent(this, Options.class);
+        Intent optionsIntent = new Intent(this, OptionsActivity.class);
         startActivity(optionsIntent);
     }
 }

@@ -1,4 +1,4 @@
-package upc.com.pe.trabajo;
+package upc.com.pe.trabajo.models;
 
 /**
  * Created by william on 21/05/15.

@@ -3,37 +3,34 @@ package upc.com.pe.trabajo;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 
-public class Options extends ActionBarActivity {
+public class ExternalActivity extends ActionBarActivity {
 
-    Button laboratoriesButton;
-    SearchView computerSearchView;
+    Button editButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_options);
-        laboratoriesButton = (Button)findViewById(R.id.laboratoriesButton);
-        laboratoriesButton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_external);
+        editButton = (Button)findViewById(R.id.editButton);
+        editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToLaboratories(v);
+                goToEditExternal(v);
             }
         });
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_opciones, menu);
+        getMenuInflater().inflate(R.menu.menu_external, menu);
         return true;
     }
 
@@ -52,9 +49,9 @@ public class Options extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void goToLaboratories(View view){
-        Intent laboratoriesIntent = new Intent(this, Laboriatories.class);
-        startActivity(laboratoriesIntent);
+    public void goToEditExternal(View view){
+        Intent editExternalIntent = new Intent(this, EditExternalActivity.class);
+        startActivity(editExternalIntent);
     }
 
 }

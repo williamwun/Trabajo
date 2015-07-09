@@ -17,11 +17,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Options"
+            android:name=".OptionsActivity"
             android:label="@string/title_activity_opciones" >
         </activity>
         <activity
-            android:name=".Laboriatories"
+            android:name=".LaboriatoriesActivity"
             android:label="@string/title_activity_laboriatories" >
         </activity>
         <activity
@@ -33,19 +33,19 @@
             android:label="@string/title_activity_details" >
         </activity>
         <activity
-            android:name=".Motherboard"
+            android:name=".MotherboardActivity"
             android:label="@string/title_activity_motherboard" >
         </activity>
         <activity
-            android:name=".EditMotherboard"
+            android:name=".EditMotherboardActivity"
             android:label="@string/title_activity_edit_motherboard" >
         </activity>
         <activity
-            android:name=".External"
+            android:name=".ExternalActivity"
             android:label="@string/title_activity_external" >
         </activity>
         <activity
-            android:name=".EditExternal"
+            android:name=".EditExternalActivity"
             android:label="@string/title_activity_edit_external" >
         </activity>
     </application>

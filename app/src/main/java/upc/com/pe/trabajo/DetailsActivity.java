@@ -1,19 +1,18 @@
 package upc.com.pe.trabajo;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 //import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import upc.com.pe.trabajo.models.ComponentsAdapter;
+import upc.com.pe.trabajo.models.Computer;
 
 
 public class DetailsActivity extends Activity{// implements AdapterView.OnItemClickListener{

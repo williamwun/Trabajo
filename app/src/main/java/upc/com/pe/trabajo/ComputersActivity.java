@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import upc.com.pe.trabajo.models.Laboratory;
+
 
 public class ComputersActivity extends ListActivity {
 

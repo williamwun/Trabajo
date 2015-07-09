@@ -16,8 +16,10 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONObject;
 
+import upc.com.pe.trabajo.models.Laboratory;
 
-public class Laboriatories extends ListActivity {
+
+public class LaboriatoriesActivity extends ListActivity {
 
     int laboratoriesQuantity;
     Laboratory vLaboratories[];
