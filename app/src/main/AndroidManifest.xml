@@ -54,6 +54,15 @@
             android:name=".activities.ComponentsActivity"
             android:label="@string/title_activity_components" >
         </activity>
+        <activity
+            android:name=".activities.IntroductionActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -12,4 +12,5 @@
     <string name="title_activity_external">External</string>
     <string name="title_activity_edit_external">EditExternal</string>
     <string name="title_activity_components">ComponentsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>
