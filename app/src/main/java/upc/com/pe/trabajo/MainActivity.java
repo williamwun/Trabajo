@@ -16,7 +16,7 @@ public class MainActivity extends ActionBarActivity {
     Options options;
     EditText userEditText, passwordEditText;
 
-    @Override//prueba
+    @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
