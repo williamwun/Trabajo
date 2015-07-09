@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-
+//comment
 public class MainActivity extends ActionBarActivity {
 
     Button loginButton;
