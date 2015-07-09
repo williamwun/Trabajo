@@ -25,23 +25,6 @@ public class ComputersActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        laboratory = getIntent().getParcelableExtra("laboratoryObject");
-        computersQuantity = laboratory.getComputersQuantity();
-
-        nComputers = new String[computersQuantity];
-        String nLab = laboratory.getLaboratoryName().substring(laboratory.getLaboratoryName().length()-1);
-        for(int i=0; i<computersQuantity; i++) {
-            if (i < 10){
-                nComputers[i] = "L" + nLab + "0" + i;
-            }else{
-                nComputers[i] = "L" + nLab + i;
-            }
-        }
-
-        computersListView = (ListView)findViewById(R.id.componentsListView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,nComputers);
-        setListAdapter(adapter);
     }
 
     @Override
@@ -71,7 +54,6 @@ public class ComputersActivity extends ListActivity {
 
     public void goToDetails(View view, int position){
         Intent detailsIntent = new Intent(this,DetailsActivity.class);
-        detailsIntent.putExtra("computerObject",laboratory.getComputerInPosition(position));
         startActivity(detailsIntent);
     }
 }

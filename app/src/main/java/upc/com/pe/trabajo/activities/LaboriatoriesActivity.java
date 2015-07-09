@@ -33,17 +33,6 @@ public class LaboriatoriesActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_laboriatories);
-        laboratoriesQuantity = 20;
-        vLaboratories = new Laboratory[laboratoriesQuantity];
-        nLaboratories = new String[laboratoriesQuantity];
-        for(int i=0; i<laboratoriesQuantity; i++){
-            vLaboratories[i] = new Laboratory();
-            vLaboratories[i].setLaboratoryName(vLaboratories[i].getLaboratoryName().concat(" "+(i+1)));
-            nLaboratories[i]=vLaboratories[i].getLaboratoryName().toString();
-        }
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nLaboratories);
-        setListAdapter(adapter);
     }
 
     public void onListItemClick(ListView list, View view, int position, long id){
@@ -75,7 +64,6 @@ public class LaboriatoriesActivity extends ListActivity {
 
     public void goToComputers(View view, int position){
         Intent computersIntent = new Intent(this, ComputersActivity.class);
-        computersIntent.putExtra("laboratoryObject",vLaboratories[position]);
         startActivity(computersIntent);
     }
 

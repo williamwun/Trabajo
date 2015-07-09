@@ -40,13 +40,13 @@ public class ComponentsAdapter extends ArrayAdapter<Computer> {
 
         //Obteniendo instancias de los text views
         TextView titulo = (TextView)listItemView.findViewById(R.id.componentTitleTextView);
-        TextView subtitulo = (TextView)listItemView.findViewById(R.id.text2);
+        //TextView subtitulo = (TextView)listItemView.findViewById(R.id.text2);
 
         //Obteniendo instancia de la Tarea en la posición actual
         Computer item = getItem(position);
 
-        titulo.setText(item.getRamMemory());
-        subtitulo.setText(item.getRamMemory());
+        //titulo.setText(item.getRamMemory());
+        //subtitulo.setText(item.getRamMemory());
 
         //Devolver al ListView la fila creada
         return listItemView;
