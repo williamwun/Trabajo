@@ -39,7 +39,7 @@ public class ComponentsAdapter extends ArrayAdapter<Computer> {
         }
 
         //Obteniendo instancias de los text views
-        TextView titulo = (TextView)listItemView.findViewById(R.id.text1);
+        TextView titulo = (TextView)listItemView.findViewById(R.id.componentTitleTextView);
         TextView subtitulo = (TextView)listItemView.findViewById(R.id.text2);
 
         //Obteniendo instancia de la Tarea en la posición actual

@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/text1"
+        android:text="componentTitleTextView"
+        android:id="@+id/componentTitleTextView"
         android:layout_alignParentTop="true"
         android:textAppearance="@android:style/TextAppearance.Holo.Medium"
         android:textStyle="bold" />
@@ -18,9 +18,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/text2"
-        android:layout_below="@+id/text1"
-        android:layout_alignParentBottom="true" />
+        android:text="componentDescriptionTextView"
+        android:id="@+id/componentDescriptionTextView"
+        android:layout_below="@+id/componentTitleTextView" />
 
 </RelativeLayout>
