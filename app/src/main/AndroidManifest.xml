@@ -51,7 +51,7 @@
             android:label="@string/title_activity_edit_external" >
         </activity>
         <activity
-            android:name=".ComponentsActivity"
+            android:name=".activities.ComponentsActivity"
             android:label="@string/title_activity_components" >
         </activity>
     </application>
