@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="upc.com.pe.trabajo.Options"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_weight="0.09">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/computerSearchView"
+            android:queryHint="Buscar" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:text="Leer codigo de barra"
+        android:id="@+id/codeBarButton"
+        android:layout_weight="0.10" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04" />
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:text="Laboratorios"
+        android:id="@+id/laboratoriesButton"
+        android:layout_weight="0.10" />
+</LinearLayout>

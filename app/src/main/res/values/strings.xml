@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Trabajo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_opciones">Opciones</string>
+    <string name="title_activity_laboriatories">Laboriatories</string>
+    <string name="title_activity_computers">Computers</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_motherboard">Motherboard</string>
+    <string name="title_activity_edit_motherboard">EditMotherboard</string>
+    <string name="title_activity_external">External</string>
+    <string name="title_activity_edit_external">EditExternal</string>
+</resources>
